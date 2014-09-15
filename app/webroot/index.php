@@ -21,16 +21,18 @@
     <table border="1" style="border-spacing:0;">
       <thead>
         <tr>
+          <td>度</td>
           <td>正弦</td>
           <td>余弦</td>
           <td>正接</td>
         </tr>
       </thead>
       <tbody>
-<?php for( $i=0; $i<180; $i++ ) : ?>
+<?php for( $i=0; $i<=180; $i++ ) : ?>
         <tr>
-          <td><pre><?php echo sprintf("%' 9.4f",sin($i)); ?></pre></td>
-          <td><pre><?php echo sprintf("%' 9.4f",cos($i)); ?></pre></td>
+          <td><?php echo sprintf('%d°',$i); ?></td>
+          <td><pre><?php echo sprintf("%' 9.6f",sin($i)); ?></pre></td>
+          <td><pre><?php echo sprintf("%' 9.6f",cos($i)); ?></pre></td>
           <td><pre><?php echo sprintf("%' 9.4f",tan($i)); ?></pre></td>
         </tr>
 <?php endfor; ?>
@@ -44,9 +46,9 @@
         </tr>
       </thead>
       <tbody>
-<?php for( $i=0; $i<180; $i++ ) : ?>
+<?php for( $i=0; $i<=180; $i++ ) : ?>
         <tr>
-          <td><pre><?php echo sprintf("%' 9.4f",sin($i)); ?></pre></td>
+          <td><pre><?php echo sprintf("%' 9.6f",sin($i)); ?></pre></td>
         </tr>
 <?php endfor; ?>
       </tbody>
@@ -59,9 +61,9 @@
         </tr>
       </thead>
       <tbody>
-<?php for( $i=0; $i<180; $i++ ) : ?>
+<?php for( $i=0; $i<=180; $i++ ) : ?>
         <tr>
-          <td><pre><?php echo sprintf("%' 9.4f",cos($i)); ?></pre></td>
+          <td><pre><?php echo sprintf("%' 9.6f",cos($i)); ?></pre></td>
         </tr>
 <?php endfor; ?>
       </tbody>
@@ -74,7 +76,7 @@
         </tr>
       </thead>
       <tbody>
-<?php for( $i=0; $i<180; $i++ ) : ?>
+<?php for( $i=0; $i<=180; $i++ ) : ?>
         <tr>
           <td><pre><?php echo sprintf("%' 9.4f",tan($i)); ?></pre></td>
         </tr>
