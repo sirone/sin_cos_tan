@@ -1,0 +1,18 @@
+/* all */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	display: inline;
+}
+.menu {
+}
+
+.menu-title {
+	background-color: #ccc;
+}
+
+.menu-indexes {
+	background-color: #ccf;
+}
