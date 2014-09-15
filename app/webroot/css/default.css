@@ -1,18 +1,44 @@
 /* all */
 * {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 h1 {
-	display: inline;
+  display: inline;
 }
 .menu {
 }
 
 .menu-title {
-	background-color: #ccc;
+  background-color: #ccc;
 }
 
 .menu-indexes {
-	background-color: #ccf;
+  background-color: #ccf;
 }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  border-spacing: 0;
+  float: left;
+}
+
+table thead {
+  text-align: center;
+  background-color: #ccc;
+}
+
+table tr td {
+  border: 1px dashed #000;
+  border-spacing: 0;
+}
+
+textarea {
+  float: left;
+}
+
+.clearfix {
+  clear:both;
+}
+
